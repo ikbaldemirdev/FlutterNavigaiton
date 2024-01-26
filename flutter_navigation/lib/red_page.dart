@@ -21,7 +21,7 @@ class RedPage extends StatelessWidget {
       },
       child: Scaffold(
         appBar: AppBar(
-          //automaticallyImplyLeading: false, // sayfaya geri ödnümeyi kaldırmak için kullanırız.
+          //automaticallyImplyLeading: false, // sayfaya geri dönmeyi kaldırmak için kullanırız.
           title: Text("Red Page"),
           backgroundColor: Colors.red,
         ),

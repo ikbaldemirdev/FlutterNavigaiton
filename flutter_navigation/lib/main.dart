@@ -126,12 +126,45 @@ class AnaSayfa extends StatelessWidget {
               onPressed: () {
                 // Navigator.of(context).pushNamed(routeName); alttakiyle aynısı
                 Navigator.pushNamed(context,
-                    '/redPage2'); // bu yolu diğerlerinin kısa olarak düşünebiliriz.
+                    '/orangePage'); // bu yolu diğerlerinin kısa olarak düşünebiliriz.
               },
               style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue.shade600),
               child: Text(
                 "PushNamed Kullanimi",
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                // Navigator.of(context).pushNamed(routeName); alttakiyle aynısı
+                Navigator.pushNamed(context,
+                    '/yellowPage'); // bu yolu diğerlerinin kısa olarak düşünebiliriz.
+              },
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.yellow.shade600),
+              child: Text(
+                "PushNamed Kullanimi Yellow",
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context)
+                    .pushNamed('/ogrenciListesi', arguments: 80);
+              },
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.orange.shade600),
+              child: Text(
+                "Liste Oluştur",
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed('/purplePage');
+              },
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.purple.shade600),
+              child: Text(
+                "Mora Git",
               ),
             ),
           ],

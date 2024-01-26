@@ -11,9 +11,24 @@ class PurplePage extends StatelessWidget {
         backgroundColor: Colors.purple,
       ),
       body: Center(
-        child: Text(
-          "Purple Page",
-          style: TextStyle(fontSize: 24),
+        child: Column(
+          children: [
+            Text(
+              "Purple Page",
+              style: TextStyle(fontSize: 24),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/orangePage');
+              },
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.orange.shade600),
+              child: Text(
+                "Turuncu sayfaya git",
+              ),
+            ),
+            
+          ],
         ),
       ),
     );
